@@ -1,0 +1,56 @@
+/* Applies to all elements on the page for consistent styling */
+* {
+	box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+	margin: 0; /* Removes default margins */
+	padding: 0; /* Removes default padding */
+ }
+ 
+
+
+
+
+
+
+
+ .game-container{
+	display: flex;  /* Sets up a Flexbox context */
+	flex-direction: column; /* Aligns items vertically */
+	align-items: center; /* Centers items vertically in the container */
+	height: 100vh; /* Full viewport height */
+ }
+
+
+.game-header,
+.control-section
+{
+	flex: 1;
+	width: 30% ;
+	margin: 1%;
+}
+
+
+.game-header{
+	background-color: red;
+}
+
+.square-sections{
+	display: grid;
+	grid-template-columns: repeat(20,1fr);
+	grid-template-rows: repeat(20,1fr);
+	background-color: wheat;
+	width: 30%;
+	aspect-ratio: 1 / 1; 
+}
+
+
+.new-square-sector{
+	
+	background-color: blue;
+	border: 2px solid black;
+
+} 
+
+.control-section{
+	background-color: aqua;
+}
+
