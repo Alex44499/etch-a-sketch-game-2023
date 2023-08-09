@@ -31,8 +31,12 @@
 			<!-- Container for control buttons and slider to control number of squares  -->
 			<div class="control-section">
 				<button class="btn btn-apply">Apply</button>
-				<button class="btn btn-apply">Value 2x2</button>
-				<button class="btn btn-apply">Reset</button>
+				<div class="slider">
+					<input type="range" min="2" max="64" value="2" step="10" class="slider" id="myRange">
+					<label for="fname">Value: 2 x 2</label>
+				</div>
+				
+				<button class="btn btn-reset">Reset</button>
 			</div>
 
 
